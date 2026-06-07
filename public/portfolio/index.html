@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--
+  Charles Akpan — Web3 UI/UX Portfolio
+  Vanilla HTML · CSS · JavaScript (no frameworks)
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Charles Akpan — Web3 UI/UX Designer. Clean interfaces for the decentralized web."
+    />
+    <title>Charles Akpan | Web3 UI/UX Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%230a0a0a' width='32' height='32' rx='8'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%2300ff9f' font-family='system-ui' font-weight='800' font-size='14'%3ECA%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <header class="site-header" id="site-header">
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="#hero" class="logo" data-scroll aria-label="Home">CA</a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#hero" data-scroll>Home</a></li>
+          <li><a href="#about" data-scroll>About</a></li>
+          <li><a href="#projects" data-scroll>Projects</a></li>
+          <li><a href="#contact" data-scroll>Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero" aria-labelledby="hero-heading">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="hero-bg-gradient"></div>
+        </div>
+        <div class="container hero-inner">
+          <h1 id="hero-heading" class="hero-title reveal">
+            <span class="hero-name">Charles</span>
+            <span class="hero-name hero-name--gradient">Akpan</span>
+          </h1>
+          <p class="hero-subtitle reveal">Web3 UI/UX Designer</p>
+          <p class="hero-intro reveal">
+            I craft clean, trustworthy interfaces for wallets, dashboards, and dApps—where every
+            pixel supports clarity and adoption.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary" data-scroll>View Projects</a>
+            <a href="#contact" class="btn btn-outline" data-scroll>Contact Me</a>
+          </div>
+          <p class="hero-meta reveal">
+            UI systems, UX flows, and Web3-native patterns.
+          </p>
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-heading">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="section-kicker">About</span>
+            <h2 id="about-heading" class="section-title">Design and chain, in one practice</h2>
+          </header>
+          <div class="about-prose reveal">
+            <p>
+              I&apos;m a <strong>Web3 UI/UX designer</strong> with a <strong>full-stack</strong>
+              mindset—I care about interfaces from the database and API layer up through the
+              browser. That means designs that respect real constraints, and handoff that
+              engineers can ship without guesswork.
+            </p>
+            <p>
+              My work sits where <strong>product design</strong> meets <strong>on-chain
+              systems</strong>: onboarding, transactions, and dashboards that stay clear under
+              load and feel as solid as any serious consumer app.
+            </p>
+            <p class="about-journey">
+              <span class="about-journey-label">Stack</span>
+              End-to-end delivery: UI/UX, frontend (HTML, CSS, JavaScript, React), APIs, and Web3
+              integrations—focused on coherent experiences across the whole product.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills" aria-labelledby="skills-heading">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="section-kicker">Capabilities</span>
+            <h2 id="skills-heading" class="section-title">Skills</h2>
+          </header>
+          <ul class="skills-list">
+            <li class="skill-block reveal">
+              <h3 class="skill-title">UI/UX Design</h3>
+              <p class="skill-tools">Figma</p>
+              <p class="skill-desc">
+                Systems, prototypes, and high-fidelity UI tuned for Web3 mental models.
+              </p>
+            </li>
+            <li class="skill-block reveal">
+              <h3 class="skill-title">Frontend</h3>
+              <p class="skill-tools">HTML · CSS · JavaScript · React</p>
+              <p class="skill-desc">
+                Responsive layouts and interaction polish aligned with the design spec.
+              </p>
+            </li>
+            <li class="skill-block reveal">
+              <h3 class="skill-title">Web3</h3>
+              <p class="skill-tools">MetaMask · Ethers.js</p>
+              <p class="skill-desc">
+                Wallet flows, signing states, and on-chain feedback users can parse quickly.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects" aria-labelledby="projects-heading">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="section-kicker">Selected work</span>
+            <h2 id="projects-heading" class="section-title">Projects</h2>
+          </header>
+          <div class="projects-list">
+            <article class="project-row reveal">
+              <h3 class="project-title">Foodstuff Marketplace</h3>
+              <p class="project-desc">
+                Shopping UX with crypto payment paths and clear checkout states.
+              </p>
+              <div class="project-actions">
+                <a href="#" class="link-action">Live demo</a>
+                <a href="#" class="link-action link-action--muted">GitHub</a>
+              </div>
+            </article>
+            <article class="project-row reveal">
+              <h3 class="project-title">Web3 Dashboard UI</h3>
+              <p class="project-desc">
+                Analytics and wallet context with strong hierarchy and restrained motion.
+              </p>
+              <div class="project-actions">
+                <a href="#" class="link-action">Live demo</a>
+                <a href="#" class="link-action link-action--muted">GitHub</a>
+              </div>
+            </article>
+            <article class="project-row reveal">
+              <h3 class="project-title">Personal portfolio</h3>
+              <p class="project-desc">
+                This site: a focused presentation for recruiters and product teams.
+              </p>
+              <div class="project-actions">
+                <a href="#" class="link-action">Live demo</a>
+                <a href="#" class="link-action link-action--muted">GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-heading">
+        <div class="container container--narrow">
+          <header class="section-head section-head--center reveal">
+            <span class="section-kicker">Contact</span>
+            <h2 id="contact-heading" class="section-title">Get in touch</h2>
+            <p class="section-lead">
+              Open to Web3 startups, collaborations, and teams that care about interface quality.
+            </p>
+          </header>
+          <form class="contact-form reveal" id="contact-form" action="#" method="post" novalidate>
+            <div class="form-row">
+              <label class="form-label" for="contact-name">Name</label>
+              <input
+                class="form-input"
+                type="text"
+                id="contact-name"
+                name="name"
+                placeholder="Your name"
+                autocomplete="name"
+              />
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="contact-email">Email</label>
+              <input
+                class="form-input"
+                type="email"
+                id="contact-email"
+                name="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+              />
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="contact-message">Message</label>
+              <textarea
+                class="form-input form-textarea"
+                id="contact-message"
+                name="message"
+                rows="5"
+                placeholder="Your message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-submit">Send message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-copy">© 2026 Charles Akpan</p>
+        <nav class="footer-nav" aria-label="Social">
+          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <span class="footer-sep" aria-hidden="true">·</span>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span class="footer-sep" aria-hidden="true">·</span>
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
