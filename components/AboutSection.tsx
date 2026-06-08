@@ -19,8 +19,7 @@ export function AboutSection() {
         <Reveal delay={0.08} variant={slideInRight}>
           <div className="space-y-3 font-body text-[14px] leading-relaxed sm:text-[15px]" style={{ color: "var(--color-text-secondary)" }}>
             <p>
-              With deep roots in the OTC investment space, I work at the intersection of innovation
-              and institutional capital. My role is simple: identify projects with genuine potential,
+              With deep roots in the OTC investment space, I identify projects with genuine potential,
               validate their fundamentals, and position them in front of the right investors at the
               right time.
             </p>
