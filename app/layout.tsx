@@ -19,15 +19,16 @@ const dmSans = DM_Sans({
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : "http://localhost:3000");
+  (process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://ceejhay.xyz");
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Cee-Jhay | OTC Dealflow Broker",
   description:
     "Connecting high-potential founders to venture capital. Dealflow scouting, investor matching, and fundraise advisory.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export const viewport: Viewport = {
